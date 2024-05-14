@@ -10,16 +10,16 @@ screen = pygame.display.set_mode((width, height))
 pygame.display.set_caption("Juego hecho por Juan José Echavarria")
 
 # Cargar imagenes
-player_image = pygame.image.load("jose.jpg")
+player_image = pygame.image.load("jose.png")
 player_image = pygame.transform.scale(player_image, (60, 60))
 
 bullet_image = pygame.image.load("bala.png")
 bullet_image = pygame.transform.scale(bullet_image, (50, 50))
 
-enemy_image = pygame.image.load("cris.jpg")
+enemy_image = pygame.image.load("cris.png")
 enemy_image = pygame.transform.scale(enemy_image, (60, 60))
 
-background_image = pygame.image.load("espacio.jpg")
+background_image = pygame.image.load("fondo.png")
 background_image = pygame.transform.scale(background_image, 
                                             (width, height))
 
