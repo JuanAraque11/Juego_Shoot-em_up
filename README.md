@@ -14,9 +14,9 @@ Asegúrate de tener instaladas todas las dependencias necesarias antes de ejecut
 
 ## Contenido del Repositorio
 
-- **/codigo:** Contiene todos los archivos fuente del juego.
-- **/4 imagenes:** Correspondientes al jugador, enemigos, balas y fondo del juego.
-- **/capturas:** Contiene capturas de pantalla del juego en acción.
+- **código:** Contiene todos los archivos fuente del juego.
+- **4 imagenes:** Correspondientes al jugador, enemigos, balas y fondo del juego.
+- **capturas:** Contiene capturas de pantalla del juego en acción.
 - **README.md:** Este archivo que estás leyendo ahora mismo.
 
 
