@@ -10,13 +10,13 @@ screen = pygame.display.set_mode((width, height))
 pygame.display.set_caption("Juego hecho por Juan José Echavarria")
 
 # Cargar imagenes
-player_image = pygame.image.load("jose.png")
+player_image = pygame.image.load("player.jpg")
 player_image = pygame.transform.scale(player_image, (60, 60))
 
 bullet_image = pygame.image.load("bala.png")
 bullet_image = pygame.transform.scale(bullet_image, (50, 50))
 
-enemy_image = pygame.image.load("cris.png")
+enemy_image = pygame.image.load("enemy.png")
 enemy_image = pygame.transform.scale(enemy_image, (60, 60))
 
 background_image = pygame.image.load("fondo.png")
@@ -59,7 +59,7 @@ while True:
             elif event.key == pygame.K_RIGHT:
                 keys_pressed['right'] = True
             elif event.key == pygame.K_SPACE:
-                bullet_rect = bullet_image.get_rect()  # Fixed: Should be assignment, not comparison
+                bullet_rect = bullet_image.get_rect() 
                 bullet = {
                     'rect' : pygame.Rect(
                         player_rect.x +
@@ -77,12 +77,12 @@ while True:
             if event.key == pygame.K_LEFT:
                 keys_pressed['left'] = False
             elif event.key == pygame.K_RIGHT:
-                keys_pressed['right'] = False  # Fixed typo: Changed event.kry to event.key
+                keys_pressed['right'] = False 
 
     # Actualizar posición
     if keys_pressed['left'] and player_rect.left > 0:
         player_rect.x -= player_speed
-    if keys_pressed['right'] and player_rect.right < width:  # Fixed: Should be player_rect.right < width
+    if keys_pressed['right'] and player_rect.right < width: 
         player_rect.x += player_speed
 
     # Actualizar balas
@@ -97,18 +97,18 @@ while True:
 
     # Actualizar enemigos
     for enemy in enemies:
-        enemy.y += enemy_speed  # Fixed: Should be enemy_rect.y
+        enemy.y += enemy_speed 
 
     # Colisiones
     for bullet in bullets:
         for enemy in enemies:
-            if enemy.colliderect(bullet['rect']):  # Fixed: Changed colliderec to colliderect
+            if enemy.colliderect(bullet['rect']): 
                 bullets.remove(bullet)
                 enemies.remove(enemy)
 
     # Coli jugador enemigo
     for enemy in enemies:
-        if player_rect.colliderect(enemy):  # Fixed: Changed colliderec to colliderect
+        if player_rect.colliderect(enemy): 
             pygame.quit()
             sys.exit()
 
@@ -124,10 +124,10 @@ while True:
 
     # Dibujar enemigos
     for enemy in enemies:
-        screen.blit(enemy_image, enemy)  # Fixed: Changed enemy_rect to enemy
+        screen.blit(enemy_image, enemy) 
 
     # Actualizar pantalla
     pygame.display.flip()
 
     # FPS
-    clock.tick(30)  # Fixed: Changed clock,tick(30) to clock.tick(30)
+    clock.tick(30) 
