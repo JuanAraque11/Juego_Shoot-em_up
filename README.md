@@ -1,7 +1,5 @@
 # Shoot'em Up Game
 
-¡Bienvenido a mi juego tipo Shoot'em Up!
-
 ## Descripción
 
 Este repositorio contiene el código fuente de un juego de estilo "Shoot'em Up" desarrollado en Python. En este juego, los jugadores controlan un personaje y se enfrentan a oleadas de enemigos mientras intentan sobrevivir el mayor tiempo posible.
