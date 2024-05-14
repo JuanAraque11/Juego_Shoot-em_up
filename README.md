@@ -13,7 +13,7 @@ Para jugar al juego, simplemente clona este repositorio y ejecuta el archivo pri
 ```bash
 git clone https://github.com/JuanAraque11/Juego_Shoot-em_up
 cd Juego_Shoot-em_up
-python main.py
+python juego.py
 ```
 
 Asegúrate de tener instaladas todas las dependencias necesarias antes de ejecutar el juego.
