@@ -11,8 +11,8 @@ Este repositorio contiene el código fuente de un juego de estilo "Shoot'em Up" 
 Para jugar al juego, simplemente clona este repositorio y ejecuta el archivo principal del juego en tu entorno de desarrollo.
 
 ```bash
-git clone https://github.com/tu_usuario/tu_repositorio.git
-cd tu_repositorio
+git clone https://github.com/JuanAraque11/Juego_Shoot-em_up
+cd Juego_Shoot-em_up
 python main.py
 ```
 
