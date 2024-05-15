@@ -8,7 +8,7 @@ Este repositorio contiene el código fuente de un juego de estilo "Shoot'em Up" 
 
 Para jugar al juego, simplemente clona este repositorio y ejecuta el archivo principal del juego en tu entorno de desarrollo.
 
-Asegúrate de tener instaladas todas las dependencias necesarias antes de ejecutar el juego.
+Asegúrate de tener instalado pygame antes de ejecutar el juego.
 
 ## Contenido del Repositorio
 
